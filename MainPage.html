@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset = "utf-8">
+    <title>아주대학교 의학문헌정보센터</title>
+    <style type="text/css">
+    ul{
+      list-style:none;
+    }
+    body{
+      font-family:"돋움", dotum, "굴림", gulim, arial, helvetica, sans-serif;
+    }
+    a:link, a:visited, a:hover {
+      color: black;
+      text-decoration:none;
+    }
+    .top{
+      margin-top:12px;
+      text-align:center;
+      font-size:12px
+      color: #FFFFFF;
+      display:grid;
+      grid-template-columns: 7fr 1fr 0.65fr 1fr 1fr 1fr 1fr 1fr 0.3fr 1fr 1fr 1fr 1fr;
+    }
+    #menu_2{
+      background: #005BAC;
+      color: #FFFFFF;
+      text-align:center;
+    }
+    .changeit1, .changeit2, .changeit3, .changeit4, .changeit5 {
+      font-weight:bold;
+      color: #FFFFFF;
+      font-size: 25px;
+    }
+    #menu_2 > ul > li {
+      display: inline-block;
+      margin:12px;
+      padding-left:100px;
+      padding-right:100px;
+      position: relative;
+    }
+    #menu_2 > ul > li > ul {
+      text-align:left;
+      position: absolute;
+      list-style-type: none;
+      padding-left: 0px;
+      display: none;
+    }
+    #menu_2 > ul > li:hover > ul {
+      display: block;
+    }
+    input:-ms-input-placeholder {color: #005BAC}
+    input:-webkit-input-placeholder {color: #005BAC}
+    input{
+      outline:none;
+      font-size:16px;
+      width:725px;
+      padding:7.5px;
+      border:0px;
+      float:left;
+    }
+    button{
+      width:59.9px;
+      height:39.9px;
+      border:0px;
+      outline:none;
+      float:rihgt;
+      color: #005BAC;
+    }
+    #elcservicebutton{
+      color : #FFFFFF solid;
+      margin: 0 0 0 20px;
+      width:40px;
+      height:50px;
+      border:0px;
+      outline:none;
+      background: #DAB67D;
+    }
+    .searching_place{
+      margin-left:33%;
+      position:relative;
+      text-align:left;
+      font-size:12px;
+      height:40px;
+      width:800px;
+      border: 2px solid #005BAC;
+    }
+    .fastservice{
+      background :#F4F6F7;
+      position: absolute;
+      padding-left: 20%;
+      top: 0px;
+      width: 100%;
+      height: 300px;
+    }
+    .fastservice h2{
+      color : #005BAC;
+      padding-top:30px;
+      margin-left: 5%;
+      padding-bottom:40px;
+      text-align: left;
+      font-weight:bold;
+    }
+    .fastservice ul a li{
+      width : 97px;
+      height : 135px;
+      text-align: center;
+      float:left;
+      padding:0 53px 0 0;
+    }
+    .infoservicebutton{
+      font-size:10px;
+    }
+    .electronicinformationservice{
+      position absolute;
+      border-left:1px solid gray;
+      float :right;
+      padding: 0px 0px 0px 10px;
+      right: 10%;
+      top:-280px;
+      width:370px;
+      height: 260px;
+      margin-right:170px;
+    }
+    .electronicinformationservice h2{
+      color: #005BAC;
+      padding: 0 0 0 40px;
+      text-align:left;
+      font-weight:bold;
+    }
+    .electronicinformationservice ul a li{
+      padding: 0 0 0 0;
+      color : black;
+      font-size:40px;
+      width:100%
+      text-align:left;
+      font-weight:bold;
+    }
+    #loginbutton{
+      color:red;
+      display: block;
+    }
+    #kor{
+      border:1px solid black;
+      height:24px;
+      display:block;
+    }
+    #eng{
+      border:1px solid black;
+      border-left:none;
+      height:24px;
+      display:block;
+    }
+    </style>
+  </head>
+  <body>
+        <!--(맨 위에 줄) 아주대학교로고, 로그인, 중도, 의대, 간호대, CSDL, SITEMAP, 언어변경-->
+    <div class="top">
+      <div>
+        <a href="http://medlib.ajou.ac.kr/AMIMC/"><img src="logo.gif" width = "215px" height = "37px"></a>
+      </div>
+      <div>
+      </div>
+      <div>
+      </div>
+      <div id="loginbutton">
+        <a href="http://medlib.ajou.ac.kr/AMIMC/Login/Login.csp">로그인 </a>
+      </div>
+      <div>
+        <a href = "https://library.ajou.ac.kr/index.ax">중앙도서관 |</a>
+      </div>
+      <div>
+        <a href = "http://ts.ajoumc.or.kr/Main/MainType08.aspx?cp=1&sid=&rc=10&ssc=0010&ssgc=UH&CCP=1"> 의과대학|</a>
+      </div>
+      <div>
+        <a href = "http://ts.ajoumc.or.kr/Main/MainType07.aspx?cp=1&sid=&rc=10&ssc=0007&ssgc=UH&CCP=1"> 간호대학|</a>
+      </div>
+      <div>
+        <a href="http://medlib.ajou.ac.kr/AMIMC/Login/sso/LoginCSDLSSO.csp">CSDL |</a>
+      </div>
+      <div>
+        <a href="http://medlib.ajou.ac.kr/AMIMC/Info/SiteMap.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">SITEMAP</a>
+      </div>
+      <div>
+      </div>
+      <div id="kor">
+        <a href="http://medlib.ajou.ac.kr/AMIMC/SlimaDLko.csp">KOR</a>
+      </div>
+      <div id="eng">
+        <a href="http://medlib.ajou.ac.kr/AMIMC/SlimaDLen.csp">ENG</a>
+      </div>
+      <div>
+      </div>
+      <div>
+      </div>
+    </div>
+    <!--(둘째 줄) 자료검색, 내 도서관 관리, 커뮤니티, 이용안내, 센터소개  아래펼치기(?)-->
+    <div id="menu_2">
+      <ul>
+        <li>
+          <div class="changeit1">
+          <a href="http://medlib.ajou.ac.kr/AMIMC/Search/Search.csp?Gate=DA&HLOC=AMIMC&COUNT=26277Uux00&Kor=1">자료검색</a>
+          </div>
+          <ul>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/Search/Search.csp?Gate=DA&HLOC=AMIMC&COUNT=26277Uux00&Kor=1">통합검색</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/Search/SearchA.csp?Gate=DB&HLOC=AMIMC&COUNT=26277Uux00&Kor=1">단행본</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/Search/SearchA.csp?Gate=DL&HLOC=AMIMC&COUNT=26277Uux00&Kor=1">학술지</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/BrowseList/ListEJ/ListEJSrch.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">E-Journal</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/Search/SearchA.csp?Gate=DW&HLOC=AMIMC&COUNT=26277Uux00&Kor=1">E-Book</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/BrowseList/ListDB/ListDBpub.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">Database</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/Search/SearchA.csp?Gate=OB&HLOC=AMIMC&COUNT=26277Uux00&Kor=1">사료</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="changeit2">
+          <a href="http://medlib.ajou.ac.kr/AMIMC/MyPage/Lend/LnReport.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">내 도서관 관리</a>
+          </div>
+          <ul>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/MyPage/Lend/LnReport.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">대출현항 조회/갱신</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/Request/Purchase/PurchaseIntro.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">도서구입 신청</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/Request/FullText/CopysIntro.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">원문복사 신청</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/community/skin/default/thesisproofapply/ThesisproofapplyIntro.csp">논문교정 신청</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/MyPage/MyKMS/MyBasketList.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">즐겨찾기</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="changeit3">
+          <a href="http://medlib.ajou.ac.kr/AMIMC/community/sc.csp?sccode=notice&HLOC=AMIMC&COUNT=26277Uux00&Kor=1">커뮤니티</a>
+          </div>
+          <ul>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/community/sc.csp?sccode=notice&HLOC=AMIMC&COUNT=26277Uux00&Kor=1">공지사항</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/community/sc.csp?sccode=faq&HLOC=AMIMC&COUNT=26277Uux00&Kor=1">FAQ</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/community/sc.csp?sccode=qna&HLOC=AMIMC&COUNT=26277Uux00&Kor=1">Q&A</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/community/sc.csp?sccode=dataroom&HLOC=AMIMC&COUNT=26277Uux00&Kor=1">자료실</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/Common/PollNew/PollList.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">설문조사</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/community/view.csp?sccode=newsletter&HLOC=AMIMC&COUNT=26277Uux00&Kor=1">뉴스레터</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/Etc/poster/PosterInfo.csp">포스터 자료실</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/Etc/Medicalillustration.csp">메디컬 일러스트</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="changeit4">
+          <a href="http://medlib.ajou.ac.kr/AMIMC/Info/Intro/LibraryGuide.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">이용안내</a>
+          </div>
+          <ul>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/Info/Intro/LibraryGuide.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">센터 이용안내</a></li>
+            <li><a href="http://medlib.ajou.ac.kr/AMIMC/Info/Intro/ServiceGuide.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">제공서비스 안내</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="changeit5">
+          <a href="http://medlib.ajou.ac.kr/AMIMC/Info/Intro/Generalstatus.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">센터소개</a>
+          </div>
+          <ul>
+            <li><a href"http://medlib.ajou.ac.kr/AMIMC/Info/Intro/Generalstatus.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">일반현황</a></li>
+            <li><a href"http://medlib.ajou.ac.kr/AMIMC/Info/Intro/Intro.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">연혁</a></li>
+            <li><a href"http://medlib.ajou.ac.kr/AMIMC/Info/Intro/Intro3.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">조직도/담당자 안내</a></li>
+            <li><a href"http://medlib.ajou.ac.kr/AMIMC/Info/Intro/Intro4.csp?HLOC=AMIMC&COUNT=26277Uux00&Kor=1">찾아오시는 길</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!--중앙 자료 검색 창-->
+    <div class="searching_place">
+      <input type="text" placeholder="">
+      <button>검색</button>
+    </div>
+    <div style="position:relative; z-index: 3" class="color#F4F6F7">
+    </div>
+    <div style="position:relative; z-index: 2" class="fastservice">
+      <h2>빠른서비스</h2>
+      <ul>
+        <a href="http://medlib.ajou.ac.kr/AMIMC/Request/FullText/CopysIntro.csp?HLOC=AMIMC&COUNT=2ca7xcpf00&Kor=1">
+          <li>
+            <img src="quick_menu_box_01.png">
+            <span class="plaincopy">원문복사신청</span>
+          </li>
+        </a>
+        <a href="http://medlib.ajou.ac.kr/AMIMC/community/skin/default/thesisproofapply/ThesisproofapplyIntro.csp">
+          <li>
+            <img src="quick_menu_box_02.png">
+            <span class="plaincopy">논문교정신청</span>
+          </li>
+        </a>
+        <a href="http://medlib.ajou.ac.kr/AMIMC/Request/Purchase/PurchaseIntro.csp?HLOC=AMIMC&COUNT=2ca7xcpf00&Kor=1">
+          <li>
+            <img src="quick_menu_box_03.png">
+            <span class="plaincopy">도서구입신청</span>
+          </li>
+        </a>
+        <a href="http://medlib.ajou.ac.kr/AMIMC/MyPage/Lend/LnReport.csp?HLOC=AMIMC&COUNT=2ca7xcpf00&Kor=1">
+          <li>
+            <img src="quick_menu_box_04.png">
+            <span class="plaincopy">대출현황조회/갱신</span>
+          </li>
+        </a>
+        <a href="http://medlib.ajou.ac.kr/AMIMC/community/view.csp?sccode=newsletter&HLOC=AMIMC&COUNT=2ca7xcpf00&Kor=1">
+          <li>
+            <img src="quick_menu_box_05.png">
+            <span class="plaincopy">뉴스레터</span>
+          </li>
+        </a>
+      </ul>
+    </div>
+    <div style="position:relative; z-index: 3" class="electronicinformationservice">
+      <h2>전자정보서비스</h2>
+      <ul class="infoservicebutton">
+        <a href="http://medlib.ajou.ac.kr/AMIMC/BrowseList/ListEJ/ListEJListNew.csp?HLOC=AMIMC&COUNT=2ca7xcpf00&Kor=1">
+          <li class="infoservicebutton1">
+            <span class="linkservice">E-JOURNAL</span><button id="elcservicebutton">></button>
+          </li>
+        </a>
+        <a href="http://medlib.ajou.ac.kr/AMIMC/BrowseList/ListSubj/ListKorABC.csp?Gate=DDC-4&HLOC=AMIMC&COUNT=2ca7xcpf00&Kor=1">
+          <li class="infoservicebutton2">
+            <span class="linkservice">E-BOOK</span><button id="elcservicebutton">></button>
+          </li>
+        </a>
+        <a href="http://medlib.ajou.ac.kr/AMIMC/BrowseList/ListDB/ListDBpub.csp?HLOC=AMIMC&COUNT=2ca7xcpf00&Kor=1">
+          <li class="infoservicebutton3">
+            <span class="linkservice">DATABASE</span><button id="elcservicebutton">></button>
+          </li>
+        </a>
+      </ul>
+    </div>
+
+  </body>
+</html>
